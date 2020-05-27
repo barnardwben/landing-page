@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(230, 220, 220);
+}
+
+header {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  width: 100%;
+  position: fixed;
+  background: rgba(240, 250, 240);
+  z-index: 2;
+}
+
+
+#header-img {
+  width: 100px;
+}
+
+h2{
+  font-size: 34px;
+  background: -webkit-linear-gradient(rgb(0, 150, 250), rgb(150, 250, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-link {
+  margin: 33px;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(0, 100, 250);
+  transition: .3s all ease-in-out;
+}
+
+.nav-link:hover {
+  background: -webkit-linear-gradient(rgb(0, 150, 250), rgb(150, 250, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Body */
+
+#toy-vid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr auto;
+  padding-bottom: 80px;
+}
+
+
+#sign {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  text-align: center;
+  margin: 150px;
+/*   padding-bottom: 0px; */
+}
+
+h3 {
+  font-size: 28px;
+  background: -webkit-linear-gradient(rgb(150, 150, 20), rgb(100, 50, 150));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
+}
+
+#mixer {
+  display: grid;
+  background: linear-gradient(rgba(50, 77, 118, 0.55), rgba(0, 150, 150, .5));
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  margin-top: 15px; 
+}
+
+
+.deats {
+  margin: 30px;
+  text-align: left;
+}
+
+.deats h4 {
+  font-size: 24px;
+}
+
+
+#video {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  border: 2px solid rgb(0, 100, 250);
+  background: red;
+}
+
+#para1 {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: center;
+/*   justify-self: center; */
+  font-size: 12px;
+  margin: 10px;
+  padding-right: 15px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+
+@media only screen and (max-width: 1050px) {
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+  
+  .nav-link {
+    font-size: 10px;
+  }
+
+  iframe {
+    width: 340px;
+  }
+
+  #para1 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+}
